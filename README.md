@@ -1,24 +1,7 @@
-# README
+# Game of Life
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Questa è una implementazione del gioco "Game of Life", sviluppata con Ruby on Rails. 
 
-Things you may want to cover:
+Questa applicazione presenta una griglia interattiva dove prende vita il gioco, insieme a pulsanti dedicati per iniziare e mettere in pausa la simulazione, e per avere una simulazione rapida e andare direttamente alla sua fine.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Grazie all'utilizzo di ActionCable, la vista viene aggiornata in tempo reale mentre la simulazione avanza.
