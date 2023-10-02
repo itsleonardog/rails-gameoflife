@@ -1,0 +1,18 @@
+<div class="main-container">
+  <h1>Game of Life</h1>
+
+  <table class="grid">
+    <% @grid.each_slice(13) do |row| %>
+      <tr>
+        <% row.each do |cell| %>
+          <td class="cell <%= cell.alive ? 'alive' : 'dead' %>" data-id="<%= cell.id %>"></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+
+  <div class="controls">
+    <button id="play" data-simulation-state="<%= @simulation_state %>">Play</button>
+    <button id="end">End</button>
+  </div>
+</div>

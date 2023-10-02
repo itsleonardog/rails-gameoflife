@@ -1,0 +1,46 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  border-collapse: collapse;
+  table-layout: fixed;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.cell.alive {
+  background-color: #00f;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 30px;
+  margin: 0 5px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
